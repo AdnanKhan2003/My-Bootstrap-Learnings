@@ -309,4 +309,27 @@ footer{
         display: block;
         margin: 2rem auto;
     }
+    .text-box{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .text-box a i.fa-arrow-left{
+        font-size: 4rem;
+    }
+}
+
+@media(max-width: 576px){
+    .text-box{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .text-box a i.fa-arrow-left{
+        font-size: 3rem;
+    }
+    .text-box .primary-title{
+        font-size: 1.8rem;
+    }
+    .text-box p.lead{
+        font-size: 1rem;
+    }
 }
