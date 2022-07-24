@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <script src="https://kit.fontawesome.com/e575e376f5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="fixed-top">
+        <a href="index.html" class="navbar-brand">ADNAN</a>
+        <ul class="nav-links-vs">
+            <li class="nav-list-vs">
+                <a href="index.html" class="nav-link-vs">Layout</a>
+            </li>
+            <li class="nav-list-vs">
+                <a href="components.html" class="nav-link-vs">Components</a>
+            </li>
+            <li class="nav-list-vs">
+                <a href="typography.html" class="nav-link-vs">Typography</a>
+            </li>
+            <li class="nav-list-vs">
+                <a href="utilites.html" class="nav-link-vs">Utilites</a>
+            </li>
+            <li class="nav-list-vs">
+                <a href="form.html" class="nav-link-vs">Form</a>
+            </li>
+            <li class="nav-list-vs">
+                <a href="bootstrapicons.html" class="nav-link-vs">Bootstrap Icons</a>
+            </li>
+        </ul>
+
+        <div class="nav-items-right">
+            <a href="https://twitter.com/AdnanK2003" target="_blank" title="My Twitter Account">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/adnan-khan-3a7aa6228/" target="_blank" title="My LinkedIn Account">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/AdnanKhan2003" target="_blank" title="My Github Account">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="Sorry.html" target="_blank" title="My Discord Account">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+            <span class="mobile-toggle">
+                <i class="fa-solid fa-bars" id="menu"></i>
+            </span>
+        </div>
+    </nav>
+
+    <!-- TYPOGRAPHY -->
+    <section class="container mt-5 text-light py-5" id="typography">
+        <h1 class="text-center title text-light">3) TYPOGRAPHY</h1>
+
+        <div class="bg-warning text-center text-dark badge-pill py-1 py-md-2 px-3 my-4">
+            <h1 class="text-center y-fs text-dark">A] Title font size</h1>
+        </div>
+
+        <div class="container border">
+            <div class="bg-light text-center text-dark py-2 w-100 my-4 button-container">
+                <h1 class="display-1">Display 1</h1>
+                <h1 class="display-2">Display 2</h1>
+                <h1 class="display-3">Display 3</h1>
+                <h1 class="display-4">Display 4</h1>
+                <h1 class="display-5">Display 5</h1>
+            </div>
+        </div>
+        <div class="bg-warning text-center text-dark badge-pill py-1 py-md-2 px-3 my-4">
+            <h1 class="text-center y-fs text-dark">B] Paragraph Tag</h1>
+        </div>
+
+        <div class="container border">
+            <div class="bg-light text-center text-dark button-container py-2 px-5 my-4">
+                <h4 class="text-center text-dark">a. Without lead class</h4>
+
+                <p>This is without .lead class</p>
+            </div>
+            <div class="bg-light button-container text-center text-dark py-2 px-5 my-4">
+                <h4 class="text-center text-dark">b. With lead class</h4>
+
+                <p class="lead">This is with .lead class</p>
+            </div>
+        </div>
+
+        <div class="bg-warning text-center text-dark badge-pill py-1 py-md-2 px-3 my-4">
+            <h1 class="text-center y-fs text-dark">C] Class Blockquote and class footer-blockquote</h1>
+        </div>
+
+        <div class="container border">
+            <div class="bg-light w-80 text-center py-2 px-5 my-4">
+                <h4 class="text-center text-dark">a. Without .blockquote class</h4>
+
+                <blockquote class="text-dark mb-0">The sentence that you are reading currently is useless. So
+                    congratulation
+                    you've wasted your time reading this</blockquote>
+                <footer class="text-dark">A Human</footer>
+            </div>
+            <div class="bg-light w-80 text-center py-2 px-5 my-4">
+                <h4 class="text-center text-dark">b. Without .blockquote class</h4>
+                <blockquote class="blockquote text-dark mb-0">The sentence that you are reading currently is useless. So
+                    congratulation you've wasted your time reading this</blockquote>
+                <footer class="blockquote-footer">A Human</footer>
+            </div>
+        </div>
+
+        <div class="bg-warning text-center text-dark badge-pill py-1 py-md-2 px-3 my-4">
+            <h1 class="text-center y-fs text-dark">D] Alignment</h1>
+        </div>
+
+        <div class="container border">
+            <div class="alignment bg-light text-center py-2 px-5 my-4">
+                <h4 class="text-center text-dark">a. Left align</h4>
+                <p class="text-left mb-0 text-dark">I'm in the left</p>
+            </div>
+            <div class="alignment bg-light text-center py-2 px-5 my-4">
+                <h4 class="text-center text-dark">b. Center align</h4>
+                <p class="text-center mb-0 text-dark">I'm in the center</p>
+            </div>
+            <div class="alignment bg-light text-center py-2 px-5 my-4">
+                <h4 class="text-center text-dark">c. Right align</h4>
+                <p class="text-right mb-0 text-dark">I'm in the right</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="main-footer mb-0 text-dark text-center py-2" style="background: #f0f3f3;">
+        <b>
+            Learnings of Adnan (Bootstrap)
+        </b>
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

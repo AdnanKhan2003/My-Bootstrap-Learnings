@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <script src="https://kit.fontawesome.com/e575e376f5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="fixed-top">
+        <a href="index.html" class="navbar-brand">ADNAN</a>
+        <ul class="nav-links-vs">
+            <li class="nav-list-vs">
+                <a href="index.html" class="nav-link-vs">Layout</a>
+            </li>
+            <li class="nav-list-vs">
+                <a href="components.html" class="nav-link-vs">Components</a>
+            </li>
+            <li class="nav-list-vs">
+                <a href="typography.html" class="nav-link-vs">Typography</a>
+            </li>
+            <li class="nav-list-vs">
+                <a href="utilites.html" class="nav-link-vs">Utilites</a>
+            </li>
+            <li class="nav-list-vs">
+                <a href="form.html" class="nav-link-vs">Form</a>
+            </li>
+            <li class="nav-list-vs">
+                <a href="bootstrapicons.html" class="nav-link-vs">Bootstrap Icons</a>
+            </li>
+        </ul>
+
+        <div class="nav-items-right">
+            <a href="https://twitter.com/AdnanK2003" target="_blank" title="My Twitter Account">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/adnan-khan-3a7aa6228/" target="_blank" title="My LinkedIn Account">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/AdnanKhan2003" target="_blank" title="My Github Account">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="Sorry.html" target="_blank" title="My Discord Account">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+            <span class="mobile-toggle">
+                <i class="fa-solid fa-bars" id="menu"></i>
+            </span>
+        </div>
+    </nav>
+
+
+    <!-- COMPONENTS -->
+    <section class="container mt-5 text-light py-5" id="components">
+        <h1 class="text-center title text-light">2) COMPONENTS</h1>
+
+        <div class="bg-warning text-center text-dark badge-pill y-fs py-1 py-md-2 px-3 my-4">
+            <h4 class="text-dark text-center">A] Buttons</h4>
+        </div>
+        <div class="container border">
+            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
+                <h4 class="text-dark text-center">a. Normal Buttons</h4>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary mx-2">Primary</button>
+                <button type="button" class="btn btn-dark mx-2">Dark</button>
+                <button type="button" class="btn btn-secondary mx-2">Secondary</button>
+            </div>
+            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
+                <h4 class="text-dark text-center">b. Outline Buttons</h4>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-outline-primary mx-2">No</button>
+                <button type="button" class="btn btn-outline-light mx-2">Bg</button>
+                <button type="button" class="btn btn-outline-info mx-2">color</button>
+            </div>
+
+            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
+                <h4 class="text-dark text-center">c. Large Buttons</h4>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-outline-primary btn-lg mx-2">I</button>
+                <button type="button" class="btn btn-outline-light btn-lg mx-2">Am</button>
+                <button type="button" class="btn btn-outline-info btn-lg mx-2">Large</button>
+            </div>
+            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
+                <h4 class="text-dark text-center">d. Small Buttons</h4>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-outline-primary btn-sm mx-2">I</button>
+                <button type="button" class="btn btn-outline-light btn-sm mx-2">Am</button>
+                <button type="button" class="btn btn-outline-info btn-sm mx-2">Small</button>
+            </div>
+            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
+                <h4 class="text-dark text-center">e. Disabled Buttons</h4>
+            </div>
+            <div class="text-center mb-3">
+                <button type="button" class="btn btn-outline-primary mx-2" disabled>I</button>
+                <button type="button" class="btn btn-outline-light mx-2" disabled>Am</button>
+                <button type="button" class="btn btn-outline-info mx-2" disabled>Disabled</button>
+            </div>
+        </div>
+        <div class="bg-warning badge-pill text-center text-dark py-1 py-md-2 px-3 my-4">
+            <h1 class="text-center y-fs text-dark">B] Badge</h1>
+        </div>
+        <div class="container border">
+            <div class="bg-light text-center text-dark button-container py-2 px-5 my-4">
+                <h1 class="text-dark text-center">Our Brand <span class="badge badge-dark">ABC</span></h1>
+                <h2 class="text-dark text-center">Our Brand <span class="badge badge-dark">ABC</span></h2>
+                <h3 class="text-dark text-center">Our Brand <span class="badge badge-dark">ABC</span></h3>
+                <h4 class="text-dark text-center">Our Brand <span class="badge badge-dark">ABC</span></h4>
+                <h5 class="text-dark text-center">Our Brand <span class="badge badge-dark">ABC</span></h5>
+                <h6 class="text-dark text-center">Our Brand <span class="badge badge-dark">ABC</span></h6>
+            </div>
+        </div>
+        <div class="bg-warning text-center text-dark badge-pill py-1 py-md-2 px-3 my-4">
+            <h1 class="text-center y-fs text-dark">C] Notification Badge</h1>
+        </div>
+        <div class="text-center text-dark button-container py-3 px-5 my-4">
+            <button type="button" class="btn btn-secondary">Notification <span
+                    class="badge badge-primary">9</span></button>
+        </div>
+        <div class="bg-warning text-center text-dark badge-pill py-1 py-md-2 px-3 my-4">
+            <h1 class="text-center y-fs text-dark">D] Border-radius</h1>
+        </div>
+        <div class="text-center text-dark button-container py-3 px-5 my-4">
+            <button type="button" class="btn btn-secondary badge-pill">Notification</button>
+        </div>
+        <div class="bg-warning text-center text-dark badge-pill py-1 py-md-2 px-3 my-4">
+            <h1 class="text-center y-fs text-dark">E] Button Group</h1>
+        </div>
+
+        <div class="container border">
+            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
+                <h4 class="text-dark text-center">a. Normal Button Group</h4>
+            </div>
+            <div class="text-dark text-center py-2 px-5 button-container mb-3 mt-3">
+                <div class="btn-group" role="group">
+                    <button class="btn btn-info">One</button>
+                    <button class="btn btn-info">Two</button>
+                    <button class="btn btn-info">Three</button>
+                </div>
+            </div>
+            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
+                <h4 class="text-dark text-center">b. Large Button Group</h4>
+            </div>
+            <div class="text-dark text-center py-2 px-5 button-container mb-3 mt-3">
+                <div class="btn-group" role="group">
+                    <button class="btn btn-light btn-lg">One</button>
+                    <button class="btn btn-light btn-lg">Two</button>
+                    <button class="btn btn-light btn-lg">Three</button>
+                </div>
+            </div>
+            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
+                <h4 class="text-dark text-center">c. Small Button Group</h4>
+            </div>
+            <div class="text-dark text-center py-2 px-5 button-container mb-3 mt-3">
+                <div class="btn-group" role="group">
+                    <button class="btn btn-danger btn-sm">One</button>
+                    <button class="btn btn-danger btn-sm">Two</button>
+                    <button class="btn btn-danger btn-sm">Three</button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-warning text-center text-dark badge-pill py-1 py-md-2 px-3 my-4">
+            <h1 class="text-center y-fs text-dark">F] Alert</h1>
+        </div>
+        <div class="container border">
+            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
+                <h4 class="text-dark text-center">a. Different color in alert</h4>
+            </div>
+            <div class="text-dark w-70 py-2 px-3 button-container mb-3 mt-3">
+                <div class="alert alert-danger">
+                    Danger! You are about to waste 3 seconds of your life by reading this!!
+                </div>
+            </div>
+            <div class="text-dark w-70 py-2 px-3 button-container mb-3 mt-3">
+                <div class="alert alert-warning">
+                    So you're wasting more time by reading this!!
+                </div>
+            </div>
+            <div class="text-dark w-70 py-2 px-3 button-container mb-3 mt-3">
+                <div class="alert alert-info">
+                    You've sucessfully wasted your time by reading this 3 alerts!!
+                </div>
+            </div>
+
+            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
+                <h4 class="text-dark text-center">b. Alert with Heading</h4>
+            </div>
+            <div class="text-dark w-70 py-2 px-3 button-container mb-3 mt-3">
+                <div class="alert alert-danger">
+                    <h3 class="alert-heading">I shouldn't have done this!!</h3>
+                    I should have focused more on learnings than to maintain this information beautifully
+                </div>
+            </div>
+
+            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
+                <h4 class="text-dark text-center">c. Dismissible Alert</h4>
+            </div>
+            <div class="text-dark w-70 py-2 px-3 button-container mb-3 mt-3">
+                <div class="alert alert-danger alert-dismissible fade show">
+                    <h3 class="alert-heading">Please Close Me!!</h3>
+                    If you wanna see me again just refresh the website.
+                    <button class="close" aria-label="close" data-dismiss="alert">
+                        <span aria-hidden="hidden">&times;</span>
+                    </button>
+                </div>
+            </div>
+            <div class="text-dark w-70 py-2 px-3 button-container mb-3 mt-3">
+                <div class="alert alert-info alert-dismissible fade show">
+                    <h3 class="alert-heading">I finally learned</h3>
+                    How to create dismissible alerts
+                    <button aria-label="close" class="close" data-dismiss="alert">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-warning text-center text-dark badge-pill py-1 py-md-2 px-3 my-4">
+            <h1 class="text-center y-fs text-dark">G] Navbar</h1>
+        </div>
+
+        <div class="container py-5 border">
+            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
+                <h4 class="text-dark text-center">a. Normal Navbar</h4>
+            </div>
+
+            <nav class="navbar navbar-light bg-light">
+                <a href="#" class="navbar-brand">NAVBAR</a>
+            </nav>
+            <nav class="navbar navbar-dark bg-dark">
+                <a href="#" class="navbar-brand">NAVBAR</a>
+            </nav>
+
+            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
+                <h4 class="text-dark text-center">b. Responsive Navbar</h4>
+            </div>
+
+            <nav class="navbar navbar-dark mb-3 navbar-expand-sm bg-primary">
+                <a href="#" class="navbar-brand">BRAND</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="expandme">
+                    <div class="navbar-nav">
+                        <a href="home" class="nav-link nav-item">Home</a>
+                        <a href="about" class="nav-link nav-item">About</a>
+                        <a href="contact" class="nav-link nav-item">Contact</a>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar navbar-dark navbar-expand-sm bg-primary">
+                <a href="#" class="navbar-brand">BRAND</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="expandme">
+                    <div class="navbar-nav">
+                        <a href="home" class="nav-link nav-item">Home</a>
+                        <a href="about" class="nav-link nav-item">About</a>
+                        <a href="contact" class="nav-link nav-item">Contact</a>
+                    </div>
+                    <form action="" class="form-inline ml-auto" method="get">
+                        <input type="search" placeholder="Search" class="form-control me-2" name="search"
+                            aria-label="search" id="">
+                        <button class="btn btn-outline-light">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    
+
+    <!-- FOOTER -->
+    <footer class="main-footer mb-0 text-dark text-center py-2" style="background: #f0f3f3;">
+        <b>
+        Learnings of Adnan (Bootstrap)
+        </b>
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

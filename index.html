@@ -13,41 +13,55 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark mb-5 fixed-top navbar-expand-sm bg-primary">
-        <a href="#ADNAN" class="navbar-brand">ADNAN</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="expandme">
-            <div class="navbar-nav">
-                <a href="#layout" class="nav-link nav-list">Layout</a>
-                <a href="#components" class="nav-link nav-list">Components</a>
-                <a href="#typography" class="nav-link nav-list">Typography</a>
-                <a href="#utilites" class="nav-link nav-list">Utilites</a>
-                <a href="#forms" class="nav-link nav-list">Forms</a>
-            </div>
+    <nav class="fixed-top">
+        <a href="index.html" class="navbar-brand">ADNAN</a>
+        <ul class="nav-links-vs">
+            <li class="nav-list-vs">
+                <a href="index.html" class="nav-link-vs">Layout</a>
+            </li>
+            <li class="nav-list-vs">
+                <a href="components.html" class="nav-link-vs">Components</a>
+            </li>
+            <li class="nav-list-vs">
+                <a href="typography.html" class="nav-link-vs">Typography</a>
+            </li>
+            <li class="nav-list-vs">
+                <a href="utilites.html" class="nav-link-vs">Utilites</a>
+            </li>
+            <li class="nav-list-vs">
+                <a href="form.html" class="nav-link-vs">Form</a>
+            </li>
+            <li class="nav-list-vs">
+                <a href="bootstrapicons.html" class="nav-link-vs">Bootstrap Icons</a>
+            </li>
+        </ul>
 
-            <form action="" class="form-inline ml-auto" method="get">
-                <input class="form-control me-2" type="search" name="search" id="search" list="topics" placeholder="Search">
-                <datalist id="topics">
-                    <option value="Layout">
-                    <option value="Components">
-                    <option value="Typography">
-                    <option value="Utilites">
-                    <option value="Forms">
-                </datalist>
-                <button class="btn btn-outline-light">Search</button>
-            </form>
+        <div class="nav-items-right">
+            <a href="https://twitter.com/AdnanK2003" target="_blank" title="My Twitter Account">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/adnan-khan-3a7aa6228/" target="_blank" title="My LinkedIn Account">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/AdnanKhan2003" target="_blank" title="My Github Account">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="Sorry.html" target="_blank" title="My Discord Account">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+            <span class="mobile-toggle">
+                <i class="fa-solid fa-bars" id="menu"></i>
+            </span>
         </div>
     </nav>
 
     <!-- LAYOUT -->
     <section class="container py-5 mt-5" id="layout">
-        <h1 class="text-center text-light">1) LAYOUT</h1>
+        <h1 class="text-center title text-light">1) LAYOUT</h1>
 
 
-        <div class="bg-warning badge-pill text-center text-dark py-2 px-3 my-4">
-            <h4 class="text-dark text-center">A] Container</h4>
+        <div class="bg-warning badge-pill text-center text-dark py-1 py-md-2 px-3 my-4">
+            <h4 class="text-dark y-fs text-center">A] Container</h4>
         </div>
         <div class="container border">
             <div class="container bg-light mt-3">
@@ -57,25 +71,25 @@
                     breakpoints and its width is 100% at extra small breakpoints(&lt;576px)</p>
             </div>
 
-            <div class="container text-center bg-light mt-3">
+            <div class="container-sm text-center bg-light mt-3">
                 <h3 class="text-center">b. Container-sm</h3>
                 <p class="text-center">It's width is 100% at extra small breakpoints(&lt;576px)</p>
             </div>
-            <div class="container text-center bg-light mt-3">
+            <div class="container-md text-center bg-light mt-3">
                 <h3 class="text-center">c. Container-md</h3>
                 <p class="text-center">It's width is 100% at extra small and small breakpoints(&lt;768px)</p>
             </div>
-            <div class="container text-center bg-light mt-3">
+            <div class="container-lg text-center bg-light mt-3">
                 <h3 class="text-center">d. Container-lg</h3>
                 <p class="text-center">It's width is 100% at extra small, small and medium breakpoints(&lt;992px)</p>
             </div>
-            <div class="container text-center bg-light mt-3">
+            <div class="container-xl text-center bg-light mt-3">
                 <h3 class="text-center">e. Container-xl</h3>
                 <p class="text-center">It's width is 100% at extra small, small, medium and large
                     breakpoints(&lt;1200px)
                 </p>
             </div>
-            <div class="container text-center bg-light mt-3">
+            <div class="container-xxl text-center bg-light mt-3">
                 <h3 class="text-center">f. Container-xxl</h3>
                 <p class="text-center">It's width is 100% at extra small, small, medium, large and x-large
                     breakpoints(&lt;1400px)</p>
@@ -85,30 +99,30 @@
                 <p class="text-center">It's width is 100% at all breakpoints(less than and greater than 1400px)</p>
             </div>
         </div>
-        <div class="bg-warning badge-pill text-center text-dark py-2 px-3 my-4">
-            <h4 class="text-dark text-center">B] Grid System</h4>
+        <div class="bg-warning badge-pill text-center text-dark py-1 py-md-2 px-3 my-4">
+            <h4 class="text-dark y-fs text-center">B] Grid System</h4>
         </div>
         <div class="container border">
             <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
                 <h4 class="text-dark text-center">A] Sized Columns</h4>
             </div>
             <div class="row gs-a px-3">
-                <div class="col-md-8 col-lg-8 col-xl-8 col-sm-12 bg-danger">I am 8 Units</div>
-                <div class="col-md-2 col-lg-2 col-xl-2 col-sm-6 bg-light">I am 2 Units</div>
-                <div class="col-md-2 col-lg-2 col-xl-2 col-sm-6 bg-info">I am 2 Units</div>
+                <div class="col-md-8 col-lg-8 col-xl-8 col-sm-12" style="background: #F8F0E3;">.col-8</div>
+                <div class="col-md-2 col-lg-2 col-xl-2 col-sm-6 bg-light">.col-2</div>
+                <div class="col-md-2 col-lg-2 col-xl-2 col-sm-6 bg-info">.col-2</div>
             </div>
             <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
                 <h4 class="text-dark text-center">B] Auto Sized Columns</h4>
             </div>
             <div class="row px-3">
-                <div class="col-xl-auto col-lg-auto col-md-auto col-sm-12 bg-danger">We're automatically sized</div>
-                <div class="col-xl-auto col-lg-auto col-md-auto col-sm-12 bg-light">We're automatically sized</div>
-                <div class="col-xl-auto col-lg-auto col-md-auto col-sm-12 bg-info">We're automatically sized</div>
+                <div class="col bg-danger">.col automatically distributes the size</div>
+                <div class="col bg-light">.col automatically distributes the size</div>
+                <div class="col bg-info">.col automatically distributes HTE size</div>
             </div>
             <div class="row gs-b px-3">
-                <div class="col-xl-2 col-lg-2 col-md-2 bg-info">I am 2 Units</div>
-                <div class="col-xl-auto col-lg-auto col-md-auto bg-warning">Remaining Units belongs to me</div>
-                <div class="col-xl-4 col-lg-4 col-md-4 bg-danger">I am 4 Units</div>
+                <div class="col-sm-12 col-md-2 bg-info">I am 2 Units</div>
+                <div class="col-sm-12 col-md bg-warning">Remaining Units belongs to me</div>
+                <div class="col-sm-12 col-md-4 bg-danger">I am 4 Units</div>
             </div>
 
             <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
@@ -148,1102 +162,12 @@
 
 
 
-    <!-- COMPONENTS -->
-    <section class="container text-light py-5" id="components">
-        <h1 class="text-center text-light">2) COMPONENTS</h1>
-
-        <div class="bg-warning text-center text-dark badge-pill py-2 px-3 my-4">
-            <h4 class="text-dark text-center">A] Buttons</h4>
-        </div>
-        <div class="container border">
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">a. Normal Buttons</h4>
-            </div>
-            <div class="text-center">
-                <button type="button" class="btn btn-primary mx-2">Primary</button>
-                <button type="button" class="btn btn-dark mx-2">Dark</button>
-                <button type="button" class="btn btn-secondary mx-2">Secondary</button>
-            </div>
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">b. Outline Buttons</h4>
-            </div>
-            <div class="text-center">
-                <button type="button" class="btn btn-outline-primary mx-2">No</button>
-                <button type="button" class="btn btn-outline-light mx-2">Bg</button>
-                <button type="button" class="btn btn-outline-info mx-2">color</button>
-            </div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">c. Large Buttons</h4>
-            </div>
-            <div class="text-center">
-                <button type="button" class="btn btn-outline-primary btn-lg mx-2">I</button>
-                <button type="button" class="btn btn-outline-light btn-lg mx-2">Am</button>
-                <button type="button" class="btn btn-outline-info btn-lg mx-2">Large</button>
-            </div>
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">d. Small Buttons</h4>
-            </div>
-            <div class="text-center">
-                <button type="button" class="btn btn-outline-primary btn-sm mx-2">I</button>
-                <button type="button" class="btn btn-outline-light btn-sm mx-2">Am</button>
-                <button type="button" class="btn btn-outline-info btn-sm mx-2">Small</button>
-            </div>
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">e. Disabled Buttons</h4>
-            </div>
-            <div class="text-center mb-3">
-                <button type="button" class="btn btn-outline-primary mx-2" disabled>I</button>
-                <button type="button" class="btn btn-outline-light mx-2" disabled>Am</button>
-                <button type="button" class="btn btn-outline-info mx-2" disabled>Disabled</button>
-            </div>
-        </div>
-        <div class="bg-warning badge-pill text-center text-dark py-2 px-3 my-4">
-            <h1 class="text-center text-dark">B] Badge</h1>
-        </div>
-        <div class="container border">
-            <div class="bg-light text-center text-dark button-container py-2 px-5 my-4">
-                <h1 class="text-dark text-center">Our Brand <span class="badge badge-dark">ABC</span></h1>
-                <h2 class="text-dark text-center">Our Brand <span class="badge badge-dark">ABC</span></h2>
-                <h3 class="text-dark text-center">Our Brand <span class="badge badge-dark">ABC</span></h3>
-                <h4 class="text-dark text-center">Our Brand <span class="badge badge-dark">ABC</span></h4>
-                <h5 class="text-dark text-center">Our Brand <span class="badge badge-dark">ABC</span></h5>
-                <h6 class="text-dark text-center">Our Brand <span class="badge badge-dark">ABC</span></h6>
-            </div>
-        </div>
-        <div class="bg-warning text-center text-dark badge-pill py-2 px-3 my-4">
-            <h1 class="text-center text-dark">C] Notification Badge</h1>
-        </div>
-        <div class="text-center text-dark button-container py-3 px-5 my-4">
-            <button type="button" class="btn btn-secondary">Notification <span
-                    class="badge badge-primary">9</span></button>
-        </div>
-        <div class="bg-warning text-center text-dark badge-pill py-2 px-3 my-4">
-            <h1 class="text-center text-dark">D] Border-radius</h1>
-        </div>
-        <div class="text-center text-dark button-container py-3 px-5 my-4">
-            <button type="button" class="btn btn-secondary badge-pill">Notification</button>
-        </div>
-        <div class="bg-warning text-center text-dark badge-pill py-2 px-3 my-4">
-            <h1 class="text-center text-dark">E] Button Group</h1>
-        </div>
-
-        <div class="container border">
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">a. Normal Button Group</h4>
-            </div>
-            <div class="text-dark text-center py-2 px-5 button-container mb-3 mt-3">
-                <div class="btn-group" role="group">
-                    <button class="btn btn-info">One</button>
-                    <button class="btn btn-info">Two</button>
-                    <button class="btn btn-info">Three</button>
-                </div>
-            </div>
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">b. Large Button Group</h4>
-            </div>
-            <div class="text-dark text-center py-2 px-5 button-container mb-3 mt-3">
-                <div class="btn-group" role="group">
-                    <button class="btn btn-light btn-lg">One</button>
-                    <button class="btn btn-light btn-lg">Two</button>
-                    <button class="btn btn-light btn-lg">Three</button>
-                </div>
-            </div>
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">c. Small Button Group</h4>
-            </div>
-            <div class="text-dark text-center py-2 px-5 button-container mb-3 mt-3">
-                <div class="btn-group" role="group">
-                    <button class="btn btn-danger btn-sm">One</button>
-                    <button class="btn btn-danger btn-sm">Two</button>
-                    <button class="btn btn-danger btn-sm">Three</button>
-                </div>
-            </div>
-        </div>
-        <div class="bg-warning text-center text-dark badge-pill py-2 px-3 my-4">
-            <h1 class="text-center text-dark">F] Alert</h1>
-        </div>
-        <div class="container border">
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">a. Different color in alert</h4>
-            </div>
-            <div class="text-dark w-70 py-2 px-3 button-container mb-3 mt-3">
-                <div class="alert alert-danger">
-                    Danger! You are about to waste 3 seconds of your life by reading this!!
-                </div>
-            </div>
-            <div class="text-dark w-70 py-2 px-3 button-container mb-3 mt-3">
-                <div class="alert alert-warning">
-                    So you're wasting more time by reading this!!
-                </div>
-            </div>
-            <div class="text-dark w-70 py-2 px-3 button-container mb-3 mt-3">
-                <div class="alert alert-info">
-                    You've sucessfully wasted your time by reading this 3 alerts!!
-                </div>
-            </div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">b. Alert with Heading</h4>
-            </div>
-            <div class="text-dark w-70 py-2 px-3 button-container mb-3 mt-3">
-                <div class="alert alert-danger">
-                    <h3 class="alert-heading">I shouldn't have done this!!</h3>
-                    I should have focused more on learnings than to maintain this information beautifully
-                </div>
-            </div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">c. Dismissible Alert</h4>
-            </div>
-            <div class="text-dark w-70 py-2 px-3 button-container mb-3 mt-3">
-                <div class="alert alert-danger alert-dismissible fade show">
-                    <h3 class="alert-heading">Please Close Me!!</h3>
-                    If you wanna see me again just refresh the website.
-                    <button class="close" aria-label="close" data-dismiss="alert">
-                        <span aria-hidden="hidden">&times;</span>
-                    </button>
-                </div>
-            </div>
-            <div class="text-dark w-70 py-2 px-3 button-container mb-3 mt-3">
-                <div class="alert alert-info alert-dismissible fade show">
-                    <h3 class="alert-heading">I finally learned</h3>
-                    How to create dismissible alerts
-                    <button aria-label="close" class="close" data-dismiss="alert">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="bg-warning text-center text-dark badge-pill py-2 px-3 my-4">
-            <h1 class="text-center text-dark">G] Navbar</h1>
-        </div>
-
-        <div class="container py-5 border">
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">a. Normal Navbar</h4>
-            </div>
-
-            <nav class="navbar navbar-light bg-light">
-                <a href="#" class="navbar-brand">NAVBAR</a>
-            </nav>
-            <nav class="navbar navbar-dark bg-dark">
-                <a href="#" class="navbar-brand">NAVBAR</a>
-            </nav>
-
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">b. Responsive Navbar</h4>
-            </div>
-
-            <nav class="navbar navbar-dark mb-3 navbar-expand-sm bg-primary">
-                <a href="#" class="navbar-brand">BRAND</a>
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="expandme">
-                    <div class="navbar-nav">
-                        <a href="home" class="nav-link nav-item">Home</a>
-                        <a href="about" class="nav-link nav-item">About</a>
-                        <a href="contact" class="nav-link nav-item">Contact</a>
-                    </div>
-                </div>
-            </nav>
-            <nav class="navbar navbar-dark navbar-expand-sm bg-primary">
-                <a href="#" class="navbar-brand">BRAND</a>
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="expandme">
-                    <div class="navbar-nav">
-                        <a href="home" class="nav-link nav-item">Home</a>
-                        <a href="about" class="nav-link nav-item">About</a>
-                        <a href="contact" class="nav-link nav-item">Contact</a>
-                    </div>
-                    <form action="" class="form-inline ml-auto" method="get">
-                        <input type="search" placeholder="Search" class="form-control me-2" name="search"
-                            aria-label="search" id="">
-                        <button class="btn btn-outline-light">Search</button>
-                    </form>
-                </div>
-            </nav>
-        </div>
-    </section>
-
-    <!-- TYPOGRAPHY -->
-    <section class="container text-light py-5" id="typography">
-        <h1 class="text-center text-light">3) TYPOGRAPHY</h1>
-
-        <div class="bg-warning text-center text-dark badge-pill py-2 px-3 my-4">
-            <h1 class="text-center text-dark">A] Title font size</h1>
-        </div>
-
-        <div class="container border">
-            <div class="bg-light text-center text-dark p-3 my-4 button-container">
-                <h1 class="display-1">Display 1</h1>
-                <h1 class="display-2">Display 2</h1>
-                <h1 class="display-3">Display 3</h1>
-                <h1 class="display-4">Display 4</h1>
-                <h1 class="display-5">Display 5</h1>
-            </div>
-        </div>
-        <div class="bg-warning text-center text-dark badge-pill py-2 px-3 my-4">
-            <h1 class="text-center text-dark">B] Paragraph Tag</h1>
-        </div>
-
-        <div class="container border">
-            <div class="bg-light text-center text-dark button-container py-2 px-5 my-4">
-                <h4 class="text-center text-dark">a. Without lead class</h4>
-
-                <p>This is without .lead class</p>
-            </div>
-            <div class="bg-light button-container text-center text-dark py-2 px-5 my-4">
-                <h4 class="text-center text-dark">b. With lead class</h4>
-
-                <p class="lead">This is with .lead class</p>
-            </div>
-        </div>
-
-        <div class="bg-warning text-center text-dark badge-pill py-2 px-3 my-4">
-            <h1 class="text-center text-dark">C] Class Blockquote and class footer-blockquote</h1>
-        </div>
-
-        <div class="container border">
-            <div class="bg-light w-80 text-center py-2 px-5 my-4">
-                <h4 class="text-center text-dark">a. Without .blockquote class</h4>
-
-                <blockquote class="text-dark mb-0">The sentence that you are reading currently is useless. So
-                    congratulation
-                    you've wasted your time reading this</blockquote>
-                <footer class="text-dark">A Human</footer>
-            </div>
-            <div class="bg-light w-80 text-center py-2 px-5 my-4">
-                <h4 class="text-center text-dark">b. Without .blockquote class</h4>
-                <blockquote class="blockquote text-dark mb-0">The sentence that you are reading currently is useless. So
-                    congratulation you've wasted your time reading this</blockquote>
-                <footer class="blockquote-footer">A Human</footer>
-            </div>
-        </div>
-
-        <div class="bg-warning text-center text-dark badge-pill py-2 px-3 my-4">
-            <h1 class="text-center text-dark">D] Alignment</h1>
-        </div>
-
-        <div class="container border">
-            <div class="alignment bg-light text-center py-2 px-5 my-4">
-                <h4 class="text-center text-dark">a. Left align</h4>
-                <p class="text-left mb-0 text-dark">I'm in the left</p>
-            </div>
-            <div class="alignment bg-light text-center py-2 px-5 my-4">
-                <h4 class="text-center text-dark">b. Center align</h4>
-                <p class="text-center mb-0 text-dark">I'm in the center</p>
-            </div>
-            <div class="alignment bg-light text-center py-2 px-5 my-4">
-                <h4 class="text-center text-dark">c. Right align</h4>
-                <p class="text-right mb-0 text-dark">I'm in the right</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- UTILITIES -->
-    <section class="container text-light py-5" id="utilites">
-        <h1 class="text-center text-light">4) UTILITIES</h1>
-
-        <div class="bg-warning text-center text-dark badge-pill py-1 px-3 my-4">
-            <h1 class="text-center text-dark">A] Cross Axis (align-items)</h1>
-        </div>
-        <div class="container border">
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">a. align-items-start</h4>
-            </div>
-            <div class="row pb-sm-4 border align-items-start align">
-                <div class="col-xl-3 col-lg-3 col-md-6 bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Possimus cumque magnam temporibus culpa adipisci, quas odit? Facilis omnis aperiam minima hic
-                    delectus fuga dolores ipsam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat,
-                    velit?</div>
-                <div class="col-xl-3 col-lg-3 col-md-6 bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Possimus cumque magnam temporibus culpa adipisci, quas odit? Facilis omnis aperiam minima hic
-                    delectus fuga dolores ipsam?</div>
-                <div class="col-xl-3 col-lg-3 col-md-6 bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Possimus cumque magnam temporibus culpa adipisci, quas odit? Facilis omnis aperiam minima hic
-                    delectus fuga dolores ipsam? Lorem, ipsum dolor sit amet consectetur adipisicing <elit
-                        class="lorem10"></elit>
-                </div>
-                <div class="col bg-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cumque
-                    magnam temporibus culpa adipisci, quas odit? Facilis omnis aperiam minima hic delectus fuga dolores
-                    ipsam?</div>
-            </div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">b. align-items-center</h4>
-            </div>
-            <div class="row pt-sm-4 pb-sm-4 border align-items-center align">
-                <div class="col-xl-3 col-lg-3 col-md-6 bg-info">lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Possimus cumque magnam temporibus culpa adipisci, quas odit? Facilis omnis aperiam minima hic
-                    delectus fuga dolores ipsam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat,
-                    velit?</div>
-                <div class="col-xl-3 col-lg-3 col-md-6 bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Possimus cumque magnam temporibus culpa adipisci, quas odit? Facilis omnis aperiam minima hic
-                    delectus fuga dolores ipsam?</div>
-                <div class="col-xl-3 col-lg-3 col-md-6 bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Possimus cumque magnam temporibus culpa adipisci, quas odit? Facilis omnis aperiam minima hic
-                    delectus fuga dolores ipsam? Lorem, ipsum dolor sit amet consectetur adipisicing <elit
-                        class="lorem10"></elit>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 bg-success">Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Possimus cumque magnam temporibus culpa adipisci, quas odit? Facilis omnis aperiam minima hic
-                    delectus fuga dolores ipsam?</div>
-            </div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">c. align-items-end</h4>
-            </div>
-            <div class="row pt-sm-5 border align-items-end align">
-                <div class="col-xl-3 col-lg-3 col-md-6 bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Possimus cumque magnam temporibus culpa adipisci, quas odit? Facilis omnis aperiam minima hic
-                    delectus fuga dolores ipsam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat,
-                    velit?</div>
-                <div class="col-xl-3 col-lg-3 col-md-6 bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Possimus cumque magnam temporibus culpa adipisci, quas odit? Facilis omnis aperiam minima hic
-                    delectus fuga dolores ipsam?</div>
-                <div class="col-xl-3 col-lg-3 col-md-6 bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Possimus cumque magnam temporibus culpa adipisci, quas odit? Facilis omnis aperiam minima hic
-                    delectus fuga dolores ipsam? Lorem, ipsum dolor sit amet consectetur adipisicing <elit
-                        class="lorem10"></elit>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 bg-success">Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Possimus cumque magnam temporibus culpa adipisci, quas odit? Facilis omnis aperiam minima hic
-                    delectus fuga dolores ipsam?</div>
-            </div>
-        </div>
-
-        <div class="bg-warning text-center text-dark badge-pill py-1 px-3 my-4">
-            <h1 class="text-center text-dark">B] Cross Axis (align-self)</h1>
-        </div>
-
-        <div class="container border">
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">a. align-self</h4>
-            </div>
-
-            <div class="row mb-5 border">
-                <div class="col-xl-4 col-lg-4 col-md-8 mx-auto bg-info align-self-start align-self-sm-start">
-                    <h4>I'll stay on start</h4>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-8 mx-auto bg-danger align-self-center align-self-sm-center">
-                    <h4>I'll stay on center</h4>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, odio. Assumenda mollitia, cum
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-8 mx-auto bg-warning align-self-end align-self-sm-end">
-                    <h4>I'll stay on end</h4>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, odio. Assumenda mollitia,
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nesciunt deleniti rerum, minus enim
-                    placeat
-                </div>
-            </div>
-        </div>
-
-        <div class="bg-warning text-center text-dark badge-pill py-1 px-3 my-4">
-            <h1 class="text-center text-dark">C] Cross Axis (align-self)</h1>
-        </div>
-        <div class="container border">
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">a. justify-content: <br>center</h4>
-            </div>
-
-            <div class="row px-3 py-0 border my-4 justify-content-center">
-                <div class="col-xl-4 col-lg-4 mt col-md-4 col-sm-5 col-xs-12 jcc-1 bg-info">
-                    align-items: center.
-                </div>
-                <div class="col-xl-4 col-lg-4 mb col-md-4 col-sm-5 col-xs-12 jcc-2 bg-danger">
-                    align-items: center.
-                </div>
-            </div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">b. justify-content: <br>space-between</h4>
-            </div>
-
-            <div class="row px-3 py-0 border my-4 justify-content-between">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-xs-12 jcsb-1 bg-info">
-                    align-items: space-between.
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-xs-12 jcsb-2 bg-danger">
-                    align-items: space-between.
-                </div>
-            </div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-                <h4 class="text-dark text-center">c. justify-content: <br>space-around</h4>
-            </div>
-            <div class="row px-3 py-0 my-4 border justify-content-around">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-xs-12 jcsa-1 bg-info">
-                    align-items: space-around.
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-xs-12 jcsa-2 bg-danger">
-                    align-items: space-around.
-                </div>
-            </div>
-        </div>
-
-        <div class="bg-warning text-center text-dark badge-pill py-1 px-3 my-4">
-            <h1 class="text-center text-dark">D] Border</h1>
-        </div>
-
-        <div class="container border">
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">a. Borders</h4>
-            </div>
-
-            <div class="row py-2 block text-center px-5 mb-3 mt-3">
-                <div class="border-0 bor p-2 mx-3">No Border</div>
-                <div class="border bor p-2 mx-3">All Border</div>
-                <div class="border-top bor p-2 mx-3">Top Border</div>
-                <div class="border-right bor p-2 mx-3">Right Border</div>
-                <div class="border-bottom bor p-2 mx-3">Bottom Border</div>
-                <div class="border-left bor p-2 mx-3">Left Border</div>
-            </div>
-
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">b. Border Color</h4>
-            </div>
-
-            <div class="row py-2 block px-5 mb-3 mt-3">
-                <div class="border border-primary bor p-2 mx-5">Primary</div>
-                <div class="border border-secondary bor p-2 mx-5">Secondary</div>
-                <div class="border border-info bor p-2 mx-5">Info</div>
-                <div class="border border-success bor p-2 mx-5">Success</div>
-                <div class="border border-warning bor p-2 mx-5">Warning</div>
-            </div>
-        </div>
-
-        <div class="bg-warning text-center text-dark badge-pill py-1 px-3 my-4">
-            <h1 class="text-center text-dark">E] Padding</h1>
-        </div>
-
-        <div class="container border">
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">a. Padding</h4>
-            </div>
-
-            <div class="text-center my-5">
-                <button class="btn btn-light block-sm p-0" type="button" type="button">Padding 0</button>
-                <button class="btn btn-light block-sm p-1" type="button" type="button">Padding 1</button>
-                <button class="btn btn-light block-sm p-2" type="button" type="button">Padding 2</button>
-                <button class="btn btn-light block-sm p-3" type="button" type="button">Padding 3</button>
-                <button class="btn btn-light block-sm p-4" type="button" type="button">Padding 4</button>
-                <button class="btn btn-light block-sm p-5" type="button" type="button">Padding 5</button>
-            </div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">b. Padding <span class="badge badge-primary">Top</span></h4>
-            </div>
-
-            <div class="text-center block my-5">
-                <button class="btn btn-primary block-sm pt-0" type="button" type="button">Padding top 0</button>
-                <button class="btn btn-primary block-sm pt-1" type="button" type="button">Padding top 1</button>
-                <button class="btn btn-primary block-sm pt-2" type="button" type="button">Padding top 2</button>
-                <button class="btn btn-primary block-sm pt-3" type="button" type="button">Padding top 3</button>
-                <button class="btn btn-primary block-sm pt-4" type="button" type="button">Padding top 4</button>
-                <button class="btn btn-primary block-sm pt-5" type="button" type="button">Padding top 5</button>
-            </div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">c. Padding <span class="badge badge-secondary">Right</span></h4>
-            </div>
-
-            <div class="text-center my-5">
-                <button class="btn btn-secondary block-sm pr-0" type="button" type="button">Padding right 0</button>
-                <button class="btn btn-secondary block-sm pr-1" type="button" type="button">Padding right 1</button>
-                <button class="btn btn-secondary block-sm pr-2" type="button" type="button">Padding right 2</button>
-                <button class="btn btn-secondary block-sm pr-3" type="button" type="button">Padding right 3</button>
-                <button class="btn btn-secondary block-sm pr-4" type="button" type="button">Padding right 4</button>
-                <button class="btn btn-secondary block-sm pr-5" type="button" type="button">Padding right 5</button>
-            </div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">d. Padding <span class="badge badge-success">Bottom</span></h4>
-            </div>
-
-            <div class="text-center my-5">
-                <button class="btn btn-success block-sm pb-0" type="button" type="button">Padding bottom 0</button>
-                <button class="btn btn-success block-sm pb-1" type="button" type="button">Padding bottom 1</button>
-                <button class="btn btn-success block-sm pb-2" type="button" type="button">Padding bottom 2</button>
-                <button class="btn btn-success block-sm pb-3" type="button" type="button">Padding bottom 3</button>
-                <button class="btn btn-success block-sm pb-4" type="button" type="button">Padding bottom 4</button>
-                <button class="btn btn-success block-sm pb-5" type="button" type="button">Padding bottom 5</button>
-            </div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">e. Padding <span class="badge badge-danger">Left</span></h4>
-            </div>
-
-            <div class="text-center my-5">
-                <button class="btn btn-danger block-sm pl-0" type="button" type="button">Padding left 0</button>
-                <button class="btn btn-danger block-sm pl-1" type="button" type="button">Padding left 1</button>
-                <button class="btn btn-danger block-sm pl-2" type="button" type="button">Padding left 2</button>
-                <button class="btn btn-danger block-sm pl-3" type="button" type="button">Padding left 3</button>
-                <button class="btn btn-danger block-sm pl-4" type="button" type="button">Padding left 4</button>
-                <button class="btn btn-danger block-sm pl-5" type="button" type="button">Padding left 5</button>
-            </div>
-        </div>
-
-        <div class="bg-warning text-center text-dark badge-pill py-1 px-3 my-4">
-            <h1 class="text-center text-dark">F] Margin</h1>
-        </div>
-
-        <div class="container py-5 border">
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">a. <span class="badge badge-warning">Margin</span></h4>
-            </div>
-
-            <div class="row">
-                <div class="border col-lg-5 px-0 mx-4 border-dark text-dark my-3 bg-warning">
-                    <div class="border bg-light text-center">
-                        <h5>All sides of button which are green in color denotes margin</h5>
-                    </div>
-                    <div class="border-dark text-center m-0"><button class="btn btn-info">Margin 0</button></div>
-                </div>
-                <div class="border col-lg-5 px-0 mx-4 border-dark text-dark my-3 bg-warning">
-                    <div class="border bg-light text-center">
-                        <h5>All sides of button which are green in color denotes margin</h5>
-                    </div>
-                    <div class="border-dark text-center m-1"><button class="btn btn-info">Margin 1</button></div>
-                </div>
-                <div class="border col-lg-5 px-0 mx-4 border-dark text-dark my-3 bg-warning">
-                    <div class="border bg-light text-center">
-                        <h5>All sides of button which are green in color denotes margin</h5>
-                    </div>
-                    <div class="border-dark text-center m-2"><button class="btn btn-info">Margin 2</button></div>
-                </div>
-                <div class="border col-lg-5 px-0 mx-4 border-dark text-dark my-3 bg-warning">
-                    <div class="border bg-light text-center">
-                        <h5>All sides of button which are green in color denotes margin</h5>
-                    </div>
-                    <div class="text-center border-dark m-3"><button class="btn btn-info">Margin 3</button></div>
-                </div>
-                <div class="border col-lg-5 px-0 mx-4 border-dark text-dark my-3 bg-warning">
-                    <div class="border bg-light text-center">
-                        <h5>All sides of button which are green in color denotes margin</h5>
-                    </div>
-                    <div class="border-dark text-center m-4"><button class="btn btn-info">Margin 4</button></div>
-                </div>
-                <div class="border col-lg-5 px-0 mx-4 border-dark text-dark my-3 bg-warning">
-                    <div class="border bg-light text-center">
-                        <h5>All sides of button which are green in color denotes margin</h5>
-                    </div>
-                    <div class="border-dark text-center m-5"><button class="btn btn-info">Margin 5</button></div>
-                </div>
-            </div>
-
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">b. Margin <span class="badge badge-success">Top</span></h4>
-            </div>
-
-            <div class="row">
-                <div class="border col-lg-5 px-0 border-dark mx-4 text-dark my-3 bg-success">
-                    <div class="border bg-light text-center">
-                        <h5>Top side of button which is in green color denotes margin top</h5>
-                    </div>
-                    <div class="text-center mt-0"><button class="btn btn-info">Margin Top 0</button></div>
-                </div>
-                <div class="border col-lg-5 px-0 border-dark mx-4 text-dark my-3 bg-success">
-                    <div class="border bg-light text-center">
-                        <h5>Top side of button which is in green color denotes margin top</h5>
-                    </div>
-                    <div class="border-dark text-center mt-1"><button class="btn btn-info">Margin Top 1</button></div>
-                </div>
-                <div class="border col-lg-5 px-0 border-dark mx-4 text-dark my-3 bg-success">
-                    <div class="border bg-light text-center">
-                        <h5>Top side of button which is in green color denotes margin top</h5>
-                    </div>
-                    <div class="border-dark text-center mt-2"><button class="btn btn-info">Margin Top 2</button></div>
-                </div>
-                <div class="border col-lg-5 px-0 border-dark mx-4 text-dark my-3 bg-success">
-                    <div class="border bg-light text-center">
-                        <h5>Top side of button which is in green color denotes margin top</h5>
-                    </div>
-                    <div class="border-dark text-center mt-3"><button class="btn btn-info">Margin Top 3</button></div>
-                </div>
-                <div class="border col-lg-5 px-0 border-dark mx-4 text-dark my-3 bg-success">
-                    <div class="border bg-light text-center">
-                        <h5>Top side of button which is in green color denotes margin top</h5>
-                    </div>
-                    <div class="border-dark text-center mt-4"><button class="btn btn-info">Margin Top 4</button></div>
-                </div>
-                <div class="border col-lg-5 px-0 border-dark mx-4 text-dark my-3 bg-success">
-                    <div class="border bg-light text-center">
-                        <h5>Top side of button which is in green color denotes margin top</h5>
-                    </div>
-                    <div class="border-dark text-center mt-5"><button class="btn btn-info">Margin Top 5</button></div>
-                </div>
-            </div>
-
-
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">c. Margin <span class="badge badge-danger">Right</span></h4>
-            </div>
-
-            <div class="row">
-                <div class="border col-lg-5 px-0 mx-4 border-dark text-dark my 3 bg-danger">
-                    <div class="border bg-light text-center">
-                        <h5>Right side of button which is in red color denotes margin right</h5>
-                    </div>
-                    <div class="border-dark text-right mr-0"><button class="btn btn-info">Margin Right 0</button></div>
-                </div>
-                <div class="border col-lg-5 px-0 mx-4 border-dark text-dark my-3 bg-danger">
-                    <div class="border bg-light text-center">
-                        <h5>Right side of button which is in red color denotes margin right</h5>
-                    </div>
-                    <div class="border-dark text-right mr-1"><button class="btn btn-info">Margin Right 1</button></div>
-                </div>
-                <div class="border col-lg-5 px-0 mx-4 border-dark text-dark my-3 bg-danger">
-                    <div class="border bg-light text-center">
-                        <h5>Right side of button which is in red color denotes margin right</h5>
-                    </div>
-                    <div class="border-dark text-right mr-2"><button class="btn btn-info">Margin Right 2</button></div>
-                </div>
-                <div class="border col-lg-5 px-0 mx-4 border-dark text-dark my-3 bg-danger">
-                    <div class="border bg-light text-center">
-                        <h5>Right side of button which is in red color denotes margin right</h5>
-                    </div>
-                    <div class="border-dark text-right mr-3"><button class="btn btn-info">Margin Right 3</button></div>
-                </div>
-                <div class="border col-lg-5 px-0 mx-4 border-dark text-dark my-3 bg-danger">
-                    <div class="border bg-light text-center">
-                        <h5>Right side of button which is in red color denotes margin right</h5>
-                    </div>
-                    <div class="border-dark text-right mr-4"><button class="btn btn-info">Margin Right 4</button></div>
-                </div>
-                <div class="border col-lg-5 px-0 mx-4 border-dark text-dark my-3 bg-danger">
-                    <div class="border bg-light text-center">
-                        <h5>Right side of button which is in red color denotes margin right</h5>
-                    </div>
-                    <div class="border-dark text-right mr-5"><button class="btn btn-info">Margin Right 5</button></div>
-                </div>
-            </div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">d. Margin <span class="badge badge-secondary">Bottom</span></h4>
-            </div>
-
-            <div class="row">
-                <div class="border col-lg-5 mx-4 px-0 border-dark text-dark my-3 bg-secondary">
-                    <div class="border bg-light text-center">
-                        <h5>Bottom side of button which is in gray color denotes margin bottom</h5>
-                    </div>
-                    <div class="text-center mb-0"><button class="btn btn-info">Margin Bottom 0</button></div>
-                </div>
-                <div class="border col-lg-5 mx-4 px-0 border-dark text-dark my-3 bg-secondary">
-                    <div class="border bg-light text-center">
-                        <h5>Bottom side of button which is in gray color denotes margin bottom</h5>
-                    </div>
-                    <div class="border-dark text-center mb-1"><button class="btn btn-info">Margin Bottom 1</button>
-                    </div>
-                </div>
-                <div class="border col-lg-5 mx-4 px-0 border-dark text-dark my-3 bg-secondary">
-                    <div class="border bg-light text-center">
-                        <h5>Bottom side of button which is in gray color denotes margin bottom</h5>
-                    </div>
-                    <div class="border-dark text-center mb-2"><button class="btn btn-info">Margin Bottom 2</button>
-                    </div>
-                </div>
-                <div class="border col-lg-5 mx-4 px-0 border-dark text-dark my-3 bg-secondary">
-                    <div class="border bg-light text-center">
-                        <h5>Bottom side of button which is in gray color denotes margin bottom</h5>
-                    </div>
-                    <div class="border-dark text-center mb-3"><button class="btn btn-info">Margin Bottom 3</button>
-                    </div>
-                </div>
-                <div class="border col-lg-5 mx-4 px-0 border-dark text-dark my-3 bg-secondary">
-                    <div class="border bg-light text-center">
-                        <h5>Bottom side of button which is in gray color denotes margin bottom</h5>
-                    </div>
-                    <div class="border-dark text-center mb-4"><button class="btn btn-info">Margin Bottom 4</button>
-                    </div>
-                </div>
-                <div class="border col-lg-5 mx-4 px-0 border-dark text-dark my-3 bg-secondary">
-                    <div class="border bg-light text-center">
-                        <h5>Bottom side of button which is in gray color denotes margin bottom</h5>
-                    </div>
-                    <div class="border-dark text-center mb-5"><button class="btn btn-info">Margin Bottom 5</button>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">e. Margin <span class="badge badge-danger">Left</span></h4>
-            </div>
-
-            <div class="row">
-                <div class="border mx-4 px-0 col-lg-5 border-dark text-dark my-3 bg-danger">
-                    <div class="border text-center bg-light">
-                        <h5>Right side of button which is in red color denotes margin right</h5>
-                    </div>
-                    <div class="border-dark text-left ml-0"><button class="btn btn-info">Margin Left 0</button></div>
-                </div>
-                <div class="border mx-4 px-0 col-lg-5 border-dark text-dark my-3 bg-danger">
-                    <div class="border text-center bg-light">
-                        <h5>Right side of button which is in red color denotes margin right</h5>
-                    </div>
-                    <div class="border-dark text-left ml-1"><button class="btn btn-info">Margin Left 1</button></div>
-                </div>
-                <div class="border mx-4 px-0 col-lg-5 border-dark text-dark my-3 bg-danger">
-                    <div class="border text-center bg-light">
-                        <h5>Right side of button which is in red color denotes margin right</h5>
-                    </div>
-                    <div class="border-dark text-left ml-2"><button class="btn btn-info">Margin Left 2</button></div>
-                </div>
-                <div class="border mx-4 px-0 col-lg-5 border-dark text-dark my-3 bg-danger">
-                    <div class="border text-center bg-light">
-                        <h5>Right side of button which is in red color denotes margin right</h5>
-                    </div>
-                    <div class="border-dark text-left ml-3"><button class="btn btn-info">Margin Left 3</button></div>
-                </div>
-                <div class="border mx-4 px-0 col-lg-5 border-dark text-dark my-3 bg-danger">
-                    <div class="border text-center bg-light">
-                        <h5>Right side of button which is in red color denotes margin right</h5>
-                    </div>
-                    <div class="border-dark text-left ml-4"><button class="btn btn-info">Margin Left 4</button></div>
-                </div>
-                <div class="border mx-4 px-0 col-lg-5 border-dark text-dark my-3 bg-danger">
-                    <div class="border text-center bg-light">
-                        <h5>Right side of button which is in red color denotes margin right</h5>
-                    </div>
-                    <div class="border-dark text-left ml-5"><button class="btn btn-info">Margin Left 5</button></div>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="bg-warning text-center text-dark badge-pill py-1 px-3 my-4">
-            <h1 class="text-center text-dark">G] Border Radius</h1>
-        </div>
-
-        <div class="container py-5 border">
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">a. rounded class</h4>
-            </div>
-            <div class="bg-info text-center align-middle rounded text-dark py-3 w-40">Rounded from all of my sides</div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">b. rounded-<span class="badge badge-warning">top</span> class</h4>
-            </div>
-            <div class="bg-warning text-center align-middle rounded-top text-dark py-3 w-40">Rounded from the Top</div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">c. rounded-<span class="badge badge-success">end</span> class</h4>
-            </div>
-            <div class="bg-success text-center align-middle rounded-right text-dark py-3 w-40">Rounded from Right</div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">d. rounded-<span class="badge badge-danger">bottom</span> class</h4>
-            </div>
-            <div class="bg-danger text-center align-middle rounded-bottom text-dark py-3 w-40">Rounded from Bottom</div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">e. rounded-<span class="badge badge-primary">start</span> class</h4>
-            </div>
-            <div class="bg-primary rounded-left text-center text-dark py-3 w-40">Rounded from Right</div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">f. rounded-<span class="badge badge-info">circle</span> class</h4>
-            </div>
-            <div class="bg-info text-center align-middle rounded-circle circle text-dark mx-auto">A circle</div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">g. rounded-<span class="badge badge-secondary">pill</span> class</h4>
-            </div>
-            <div class="bg-secondary rounded-pill text-center text-dark py-3 w-40">Rounded from Right</div>
-
-        </div>
-
-
-        <div class="bg-warning my-5 text-center text-dark badge-pill py-1 px-3 my-4">
-            <h1 class="text-center text-dark">H] Box Shadow</h1>
-        </div>
-
-        <div class="container rounded py-2 border" style="background: gray">
-            <div class="bg-dark text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-light text-center">a. No Box shadow</h4>
-            </div>
-            <div class="shadow-none rounded text-dark my-2 p-2 text-center" style="background: #fff3f3;">No Shadow</div>
-
-            <div class="bg-dark text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-light text-center">b. Small Box shadow</h4>
-            </div>
-            <div class="shadow-sm rounded text-dark my-2 p-2 text-center" style="background: #fff3f3;">Small Shadow
-            </div>
-
-            <div class="bg-dark text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-light text-center">c. Regular Box shadow</h4>
-            </div>
-            <div class="shadow rounded text-dark my-2 p-2 text-center" style="background: #fff3f3;">Regular or Medium
-                Shadow</div>
-
-            <div class="bg-dark text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-light text-center">d. Large Box shadow</h4>
-            </div>
-            <div class="shadow-lg rounded text-dark my-4 p-2 text-center" style="background: #fff3f3;">Large Shadow
-            </div>
-        </div>
-
-
-        <div class="bg-warning my-5 text-center text-dark badge-pill py-1 px-3 my-4">
-            <h1 class="text-center text-dark">I] Width (Sizing)</h1>
-        </div>
-
-        <div class="container border py-5">
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">a. class w-25</h4>
-            </div>
-            <div class="bg-success p-2 border w-25 mx-auto text-center">Width 25%</div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">b. class w-50</h4>
-            </div>
-            <div class="bg-success p-2 border w-50 mx-auto text-center">Width 50%</div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">c. class w-50</h4>
-            </div>
-            <div class="bg-success p-2 border w-50 mx-auto text-center">Width 75%</div>
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">d. class w-50</h4>
-            </div>
-            <div class="bg-success p-2 border w-100 mx-auto text-center">Width 100%</div>
-        </div>
-
-        <div class="bg-warning my-5 text-center text-dark badge-pill py-1 px-3 my-4">
-            <h1 class="text-center text-dark">J] Width (Sizing)</h1>
-        </div>
-
-        <div class="container py-5 border">
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">a. Responsive padding</h4>
-            </div>
-            <button class="btn btn-primary p-xs-1 p-sm-2 p-md-3 p-lg-4 p-xl-5">Responsive Padding</button>
-            <button class="btn btn-primary p-xs-5 p-sm-4 p-md-3 p-lg-2 p-xl-1">Responsive Padding</button>
-
-            <div class="bg-light text-dark py-2 px-5 button-container my-5 mt-3">
-                <h4 class="text-dark text-center">b. Responsive margin</h4>
-            </div>
-
-            <div class="row border">
-                <button class="btn col-lg-5 btn-primary m-xs-1 m-sm-2 m-md-3 m-lg-4 m-xl-5">Responsive Margin</button>
-                <button class="btn btn-primary m-xs-5 m-sm-4 m-md-3 m-lg-2 m-xl-1">Responsive Margin</button>
-            </div>
-        </div>
-
-
-    </section>
-
-
-
-
-
-
-    <!-- FORMS -->
-    <section class="container text-light py-5" id="forms">
-        <h1 class="text-center text-light">5) FORMS</h1>
-
-        <div class="bg-warning text-center text-dark badge-pill py-1 px-3 my-5">
-            <h4 class="text-dark text-center">A] Normal Form</h4>
-        </div>
-        <div class="container border">
-            <form action="" class="my-5" method="post">
-                <div class="form-group">
-                    <label for="Name">Name</label>
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" class="form-control" id="email" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" class="form-control" id="password" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <label for="gender">Gender</label>
-                    <select name="gender" id="gender" class="form-control">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                    </select>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" name="agreement" class="form-check-input" value="I don't agree"
-                        id="I dont agree">
-                    <label for="I dont agree" class="form-check-label">I don't agree</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" name="agreement" id="I agree" value="I agree" class="custom-control-input">
-                    <label for="I agree" class="custom-control-label">I agree</label>
-                </div>
-                <button type="reset" class="btn btn-light mt-4 me-3">Reset</button>
-                <button type="submit" class="btn btn-light  mt-4 mx-2">Submit</button>
-            </form>
-        </div>
-
-        <div class="bg-warning text-center text-dark badge-pill py-1 px-3 my-5">
-            <h4 class="text-dark text-center">B] Beautiful Form Layout</h4>
-        </div>
-
-        <div class="container border">
-            <form action="" class="my-5" method="get">
-                <div class="form-row">
-                    <div class="form-group col-md-6 col-xl-4">
-                        <label for="name">Name</label>
-                        <input class="form-control" type="text" name="name" id="name" placeholder="Enter your Name">
-                    </div>
-                    <div class="form-group col-md-6 col-xl-4">
-                        <label for="middle-name">Middle name</label>
-                        <input class="form-control" type="text" name="Middle name" id="Middle name"
-                            placeholder="Enter your Middle name">
-                    </div>
-                    <div class="form-group col-md-5 col-xl-4">
-                        <label for="surname">Surname</label>
-                        <input class="form-control" type="text" name="last name" id="last name"
-                            placeholder="Enter your Surname">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="address">Address</label>
-                    <input class="form-control" type="text" name="address" id="address"
-                        placeholder="Enter your Address">
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="state">State</label>
-                        <input class="form-control" type="text" name="state" id="state" placeholder="State">
-                    </div>
-                    <div class="form-group col-md-3 col-sm-6">
-                        <label for="city">City</label>
-                        <input class="form-control" type="text" name="city" id="city" placeholder="City">
-                    </div>
-                    <div class="form-group col-md-3 col-sm-6">
-                        <label for="pincode">Pincode</label>
-                        <input class="form-control" type="number" name="pincode" id="pincode" placeholder="Pincode">
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <input type="radio" name="agreement" id="agreement" value="agree">
-                        <label for="agree">Agree</label>
-
-                        <input type="radio" name="agreement" id="agreement" value="disagree">
-                        <label for="agree">Disagree</label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <button type="reset" class="btn btn-info">Reset</button>
-                    <button type="submit" class="btn btn-primary mx-2">Submit</button>
-                </div>
-            </form>
-        </div>
-
-    </section>
-
-    <section class="container text-light py-5">
-        <h1 class="text-center text-light">5) BOOTSTRAP ICONS</h1>
-
-        <div class="bg-warning text-center text-dark badge-pill py-1 px-3 my-5">
-            <h4 class="text-dark text-center">A] svg icon</h4>
-        </div>
-
-        <div class="bg-light text-dark py-2 px-5 button-container mb-3 mt-3">
-            <h4 class="text-dark text-center">a. Normal svg icon</h4>
-        </div>
-
-        <div class="text-center text-dark button-container py-3 px-5 my-4" style="user-select: auto;">
-            <button class="btn btn-danger mx-auto">Delete
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
-                    <path fill-rule="evenodd"
-                        d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                </svg></button>
-        </div>
-
-
-        <div class="bg-light text-dark py-2 mxy5 px-5 button-container mb-3 mt-3">
-            <h4 class="text-dark text-center">b. Using svg icon in forms <br> (Prepend & Append) </h4>
-        </div>
-
-
-        <div class="row my-5">
-            <div class="col-xl-4 col-lg-4 col-md-6 mlf">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-search" viewBox="0 0 16 16">
-                                <path
-                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                            </svg>
-                        </span>
-                    </div>
-                    <input class="form-control" type="search" name="search" placeholder="Search" id="">
-                </div>
-            </div>
-
-            <div class="col-xl-4 col-lg-4 col-md-6 mlf">
-                <div class="input-group mb-3">
-                    <input class="form-control" type="search" name="search" placeholder="Email Id" id="">
-                    <div class="input-group-append">
-                        <span class="input-group-text">
-                            @gmail.com
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-4 col-lg-4 col-md-6 mlf">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-currency-dollar" viewBox="0 0 16 16">
-                                <path
-                                    d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
-                            </svg>
-                        </span>
-                    </div>
-                    <input class="form-control" type="search" name="search" placeholder="Donate" id="">
-                </div>
-            </div>
-        </div>
-
-        <div class="bg-light text-dark py-2 mxy5 px-5 button-container mb-3 mt-3">
-            <h4 class="text-dark text-center">c. Some font awesome icons</h4>
-        </div>
-
-        <div class="text-center py-2 px-5 button-container mb-3 mt-3">
-            <i class="fa-brands mx-3 .fs fa-facebook-square"></i>
-            <i class="fa-solid mx-3 .fs fa-magnifying-glass"></i>
-            <i class="fa-solid mx-3 .fs fa-bars"></i>
-        </div>
-
-    </section>
-
-
-
-
+    <!-- FOOTER -->
+    <footer class="main-footer mb-0 text-dark text-center py-2" style="background: #f0f3f3;">
+        <b>
+        Learnings of Adnan (Bootstrap)
+        </b>
+    </footer>
 
 
 
@@ -1258,6 +182,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
